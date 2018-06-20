@@ -15,12 +15,6 @@ body, html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  /* the next line is what causes the parallax effect
-  fixed = parallax
-  scroll = normal
-  i added this to media query below. gets kinda funky on smaller screens so disable parallax */
-  /* background-attachment: fixed; */
 }
 
 .pimg1 {
@@ -41,6 +35,11 @@ body, html {
 /* applies to screens larger than 568px */
 @media (min-width: 568px) {
   .pimg1, .pimg2, .pimg3 {
+    /* the next line is what causes the parallax effect
+    fixed = parallax
+    scroll = normal
+    i added this to media query below. gets kinda funky on smaller screens so disable parallax */
+    /* background-attachment: fixed; */
     background-attachment: fixed;
   }
 }
@@ -75,6 +74,7 @@ body, html {
   background-color: #111;
   color: #fff;
   padding: 20px;
+  opacity: 0.8;
 }
 
 /* .ptext .border.trans {
